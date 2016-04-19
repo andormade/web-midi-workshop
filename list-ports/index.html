@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+	navigator.requestMIDIAccess({sysex: false}).then(success, error);
+
+	function success(midiAccess) {
+		midiAccess.outputs.forEach(function(port) {
+			console.log(port);
+		});
+	}
+
+	function error(err) {
+		console.log(err);
+	}
+	</script>
+</body>
+</html>
