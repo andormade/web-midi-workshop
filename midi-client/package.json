@@ -1,0 +1,20 @@
+{
+  "name": "midi-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "dependencies": {
+    "socket.io-client": "^1.4.6"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdir -p browser && browserify src/index.js --standalone MidiClient > browser/midi-client.js"
+  }
+}
