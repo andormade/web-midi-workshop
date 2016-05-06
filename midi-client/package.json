@@ -15,6 +15,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p browser && browserify src/index.js --standalone MidiClient > browser/midi-client.js"
+    "build": "browserify src/index.js --standalone MidiClient > browser/midi-client.js",
+    "serve": "./node_modules/.bin/http-server"
   }
 }
